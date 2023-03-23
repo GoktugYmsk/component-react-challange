@@ -2,10 +2,10 @@ import React from 'react'
 
 import Findex6 from './child4/Findex6';
 
-function Findex5({setHandle}) {
+function Findex5({setHandle,setDifferent}) {
   return (
     <div>
-      <Findex6 setHandle={setHandle} />
+      <Findex6 setHandle={setHandle} setDifferent={setDifferent} />
     </div>
   )
 }

@@ -1,27 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import { FunctionContext, useContext } from '../../context'
+import React from 'react'
 
-function Findex4() {
-  const { handleClick,appearMethod } = useContext(FunctionContext)
-  const [inputValue, setInputValue] = useState('');
+import Findex8 from './child4/Findex8'
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  }
-  console.log(inputValue)
-
-  useEffect(()=>{
-    appearMethod({
-      setInputValue
-    })
-  },[])
-
+function Findex4({different}) {
   return (
     <div>
-      {handleClick && 'çalışıyor'}
-      <input value={inputValue} onChange={handleInputChange} placeholder='mesaj ' />
+      <Findex8 different={different}/>
     </div>
   )
 }
 
-export default Findex4
+export default Findex4 

@@ -1,16 +1,13 @@
-import React, { createContext, useState, useContext } from 'react';
-import Findex3 from './altComponent/Findex3';
+import React from 'react'
 
+import Findex4 from './altComponent/child3/Findex4'
 
-function Findex1() {
-
+function Findex1({different}) {
   return (
     <div>
-        <Findex3 />
+      <Findex4 different={different} />
     </div>
-  );
+  )
 }
 
-export default Findex1;
-
-
+export default Findex1
