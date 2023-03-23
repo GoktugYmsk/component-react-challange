@@ -3,11 +3,11 @@ import React from 'react'
 import Child3 from './rightChlidren/Child3'
 import Child4 from './rightChlidren/Child4'
 
-function RightAlt2() {
+function RightAlt2({click}) {
   return (
     <div>
-      <Child3/>
-      <Child4/>
+      <Child3 click={click} />
+      <Child4 />
     </div>
   )
 }

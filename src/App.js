@@ -6,11 +6,12 @@ import './App.css'
 
 function App() {
   const [show, setShow] = useState('')
+  const [click,setClick] = useState(false)
 
   return (
     <div>
-      <Left show={show} />
-      <Right setShow={setShow} />
+      <Left show={show} setClick={setClick} />
+      <Right setShow={setShow} click={click} />
     </div>
   )
 }
