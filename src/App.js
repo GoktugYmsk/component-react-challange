@@ -1,39 +1,20 @@
 import React, { useState } from 'react';
-import { FunctionContext } from './components/context';
 import Findex3 from './components/altComponent/Findex3';
-import Findex4 from './components/altComponent/Findex4';
+import Findex2 from './components/Findex2';
 
 import './App.css';
 
 function App() {
-
-  const [handleClick,setHandleClick] = useState(false)
-  const [method,setMethod] = useState({})
-
-  const  appearMethod = newMethods =>{
-    setMethod({
-      ...method,
-      ...newMethods,
-    })
-  }
-
-  const click = () =>{
-      setHandleClick(true)
-  }
-
-  const data = {
-   handleClick,
-   appearMethod,
-   ...method
-  }
-
+  const [deneme,setDeneme] =useState(false)
+  const [handle,setHandle] = useState(false)
 
   return (
-    <FunctionContext.Provider value={data}>
-      <Findex3/>
-      <Findex4 />
-      <button onClick={click} >apteki Findex4</button>
-    </FunctionContext.Provider>
+    <div>
+      <Findex3 deneme={deneme} setDeneme={setDeneme} />
+      {deneme && 'deneme çalışıyor'}
+      <Findex2 setHandle={setHandle} />
+      {handle && 'Child 3 componentindeki buton çalışıyor'}
+    </div>
   );
 }
 

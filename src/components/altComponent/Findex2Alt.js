@@ -1,6 +1,6 @@
 import React from 'react'
 
-function index5() {
+function Findex2Alt() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function index5() {
   )
 }
 
-export default index5
+export default Findex2Alt

@@ -1,16 +1,22 @@
 import React from 'react';
-import { FunctionContext, useContext } from './../context'
 
+function Findex3({setDeneme}) {
 
-function Findex3() {
-
-  const {inputValue} = useContext(FunctionContext)
+  const handleClick = () =>{
+    setDeneme(true)
+  }
 
   return (
     <div>
-      <p>{inputValue}</p>
+      <button onClick={handleClick} >findex 3 teki buton</button>
     </div>
   );
 }
 
 export default Findex3;
+
+
+
+
+
+

@@ -1,14 +1,13 @@
 import React from 'react'
 
-import index5 from './altComponent/Findex5'
-import index6 from './altComponent/Findex6'
+import Findex5 from './altComponent/child3/Findex5';
 
-function index2() {
+function Findex2({setHandle}) {
   return (
     <div>
-      
+      <Findex5 setHandle={setHandle}/>
     </div>
   )
 }
 
-export default index2
+export default Findex2;

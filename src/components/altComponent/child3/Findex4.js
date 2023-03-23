@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FunctionContext, useContext } from './../context'
+import { FunctionContext, useContext } from '../../context'
 
 function Findex4() {
   const { handleClick,appearMethod } = useContext(FunctionContext)
