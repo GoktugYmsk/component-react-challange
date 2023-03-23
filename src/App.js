@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div>
-      <Left show={show} setClick={setClick} />
+      <Left show={show} setClick={setClick} click={click}  />
       <Right setShow={setShow} click={click} />
     </div>
   )
