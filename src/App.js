@@ -9,6 +9,10 @@ function App() {
   const [click,setClick] = useState(false)
   const [follow,setFollow] = useState(false)
 
+  useEffect(()=>{
+    console.log('çalıştı')
+  },[follow])
+
   return (
     <div>
       <Left show={show} setClick={setClick} click={click} follow={follow} />
