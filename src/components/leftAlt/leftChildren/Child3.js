@@ -10,7 +10,7 @@ function Child3({ setTheme }) {
   }
 
   return (
-    <div>
+    <div >
       <button onClick={darkTheme} >Tema dark </button>
       <button onClick={lightTheme} >Tema light</button>
     </div>

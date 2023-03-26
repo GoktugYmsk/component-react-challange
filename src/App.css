@@ -10,3 +10,24 @@
     background: white;
     color: black;
 }
+.Popup{
+    height: 400px;
+    width: 400px;
+    background: red;
+    position: relative;
+    left: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popupCloseButton{
+    width: 100px;
+    height: 20px;
+    cursor: pointer;
+    border-style: none;
+    background: rgb(60, 29, 113);
+    box-shadow: 2px 4px 4px white;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
