@@ -10,6 +10,8 @@ function App() {
   const [follow, setFollow] = useState(false)
   const [theme, setTheme] = useState(false)
   const [change,setChange] = useState(false)
+  const [write,setWrite] = useState('')
+  
 
   useEffect(() => {
     console.log('çalıştı')
@@ -17,8 +19,8 @@ function App() {
 
   return (
     <div className={`App ${theme ? 'AppDark' : 'AppLight'} `}>
-      <Left show={show} setClick={setClick} click={click} follow={follow} setTheme={setTheme} setChange={setChange} />
-      <Right setShow={setShow} click={click} setFollow={setFollow} theme={theme} setTheme={setTheme} change={change} />
+      <Left show={show} setClick={setClick} click={click} follow={follow} setTheme={setTheme} setChange={setChange} setWrite={setWrite} />
+      <Right setShow={setShow} click={click} setFollow={setFollow} theme={theme} setTheme={setTheme} change={change} write={write} />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptatem alias esse quia voluptates in, doloribus officiis officia minima molestias fugit ut adipisci minus praesentium repudiandae et, dolor voluptas nobis!
         Dolor laborum eaque tempore quaerat perspiciatis quae aliquam delectus soluta fugit, cupiditate aperiam error eius ratione perferendis enim fuga quo quia labore alias facilis in blanditiis autem? Nostrum, officiis. Tempore.

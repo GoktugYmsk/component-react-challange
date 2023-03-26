@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Child2() {
+function Child2({write}) {
   return (
     <div>
-      
+      {write}
     </div>
   )
 }
